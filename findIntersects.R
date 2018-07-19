@@ -16,7 +16,7 @@ exactIntersects = function(file1, file2) {
 			if (site1[[i]] == site2[[j]]) {
 				res = rbind(res, data.frame(chromosome = file2$chromosome[[j]], editCoord = site2[[j]], geneName = file2$gene[[j]], editPercent_1 = file1$editPercent[[i]], editPercent_2 = file2$editPercent[[j]]))	
 			} else {
-						next
+				next
 			}
 		}
 	}
