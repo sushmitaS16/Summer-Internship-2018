@@ -7,7 +7,7 @@ twoLines = function(s,t) {
 
 	#character vector formation
 	s = s$GeneLength		#column name to be used for plotting from 1st file
-	t = t$diff				#column name to be used for plotting from 2nd file
+	t = t$diff			#column name to be used for plotting from 2nd file
 	
 	#image file to be stored as
 	jpeg(readline(prompt = "Name your jpeg file : "))
@@ -27,7 +27,6 @@ twoLines = function(s,t) {
 
 }
 
-#take the files in
 file1 = read.csv(readline(prompt = "Enter the 1st file : "), header=TRUE) 		#reference file preferred
 file2 = read.csv(readline(prompt = "Enter the 2nd file : "), header=TRUE)
 
