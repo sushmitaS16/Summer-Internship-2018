@@ -19,7 +19,7 @@ twoLines = function(s,t) {
 	plot(density(t), main = "", xlab = NA, ylab = NA, axes = FALSE, col = 'red', lwd = 2, xlim = c(a,b))
 	axis(side = 4, las = 1)
 	mtext(side = 4, line = 4, 'Density')
-	legend("topright", legend = c("Fly Transcriptome", "Atx-bound"), lty = c(1,1), cex = 0.8, col=c("slateblue", "red"))
+	legend("topright", legend = c(readline(prompt = "Value for legend 1 : "), readline(prompt = "Value for legend 2 : ")), lty = c(1,1), cex = 0.8, col=c("slateblue", "red"))
 	
 	dev.off()			#image is stored in the working directory
 
